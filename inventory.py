@@ -177,8 +177,8 @@ def search_shoe():
         else:
             print("You have not entered a valid code. Please try again.")
     shoe_data_list = [["Country", "Code", "Product", "Cost", "Quantity"],
-                      [shoe_data.country, shoe_data.code, shoe_data.product, str(shoe_data.cost),
-                       str(shoe_data.quantity)]]
+                      [shoe.country, shoe.code, shoe.product, str(shoe.cost),
+                       str(shoe.quantity)]]
     print(tabulate(shoe_data_list, headers="firstrow"))
     print("")
     return shoe
@@ -207,6 +207,7 @@ def highest_qty():
         if shoe.get_quantity() == highest_stock:
             print(f"The {shoe.product} ({shoe.code}) has the highest stock quantity of {highest_stock}."
                   f" We advise you put this item on sale.\n")
+            break
     '''
     Write code to determine the product with the highest quantity and
     print this shoe as being for sale.
@@ -241,7 +242,7 @@ while True:
     elif menu == "ss":
         shoe_data = search_shoe()
 
-    elif menu == "sa":
+    elif menu == "sv":
         value_per_item()
 
     elif menu == "vhs":
