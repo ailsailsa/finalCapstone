@@ -16,6 +16,7 @@ A simple Python program which reads text from the text file inventory.txt and pe
 
 ### Executing program
 The program will present a menu when run: 
+
 ![Screenshot 2023-01-09 at 10 44 45](https://user-images.githubusercontent.com/53863441/211290736-9a2c96a3-3893-4c26-b5ed-ff6b02dc50d7.png)
 
 Using the following functions to manipulate the data: 
@@ -29,7 +30,7 @@ Using the following functions to manipulate the data:
 - search_shoe: searches shoe list using shoe code and returns object to be printed. 
 - value_per_item: calculates the total value for each item (value = cost * quantity)
 - highest_qty: determines the product with the highest quantity 
-```
+
 As seen below: 
 
 ![Screenshot 2023-01-09 at 10 42 04](https://user-images.githubusercontent.com/53863441/211290641-a26d0651-40a2-4bf4-9fa9-da5877409cf9.png)
